@@ -1,0 +1,2 @@
+Main> evaluaciones [1,2,3] [doble, triple]
+[[2,3],[4,6],[6,9]]
