@@ -1,0 +1,7 @@
+:t = de que tipo es lo que hay acontinuación
+*Main> :t True
+True :: Bool
+
+encuentraPersona.hs
+*Main> encontrar [("Pedro", 20, "636000000"), ("Juan",21,"607222222"), ("Alberto", 24, "635111111")] "Pedro"
+["636000000"]

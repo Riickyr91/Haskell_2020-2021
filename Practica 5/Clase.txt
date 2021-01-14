@@ -1,0 +1,27 @@
+Induccion ( Igual que prolog)
+
+miFuncion::[(a->b)] -> [a] -> [b]
+miFuncion [] _ = []
+miFuncion (f:fs) (x:xs) = (f x):(miFuncion fs xs)
+    (f x) = aplica la función (a->b) pero f x y lo concatena con la
+        llamada recursiva de miFuncion con los restos de las listas
+
+-- Principio de Induccion
+-- 
+-- Sea x que pertenece al conjunto S 
+-- S tiene que ser ordenable
+-- 
+-- Queremos probar si la propiedad P es cierta para
+-- todo elemento del conjunto S
+-- 
+-- 1) P es cierta para x0 ( el elmento mas pequeño de S)
+-- 2) Si P es cierta para n - 1 entonces puedo afirmar
+--      que será cierta para n
+--      P(n - 1) -> P(n)
+
+-- Ejemplos de conjuntos
+-- Naturales 1, 2, 3, 4, ...
+-- Listas [], [_], [ _, _], ...
+-- Arboles binarios: nil, a(_, nil, nil), ...
+-- Grafo: g([],[]), g([a],[]), ...
+

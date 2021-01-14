@@ -1,0 +1,15 @@
+[1..] crea una lista de infinitos valores
+take 5 [1,2,3,4,5,6,7,8] devuelve una lista de los 5 primeros elementos de la siguiente lista
+Gracias a la evaluacion perezosa si hacemos:
+    take 5 [1..] solo se creara una lista de 5 valores, no se llegara a hacer una lista infinita
+Es decir, la evaluacion perezosa solo genera o calcula los elementos que sean necesarios
+
+map recibe una funcion que va de un tipo a hacia un tipo b, recibe una lista de tipo
+    a ( [a] ) y la devuelve de tipo b.
+*Main> map succ [1..5]   
+[2,3,4,5,6]
+
+*Main> map (+2) [1..5]
+[3,4,5,6,7]
+
+(x:xs) ese operador hace separar la cabeza del resto x es la cabeza y el resto de la lista es xs

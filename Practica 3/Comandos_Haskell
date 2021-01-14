@@ -1,0 +1,5 @@
+:reload -> recargar
+Ctrl + l -> limpiar consola
+ghci -> abrir consola en terminal
+:info + comando -> informacion del comando
+:load "fichero" -> cargar fichero

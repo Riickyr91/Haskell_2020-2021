@@ -1,0 +1,12 @@
+Buen tutorial de Haskel ( Ejercicios y Explicaciones )
+	http://aprendehaskell.es/main.html
+
+Manuales y Videos
+	http://www.cs.us.es/~mjoseh/cursos/i1m-20/doc.php
+
+Aprender Scala ( Trabajo final de practicas )
+	https://www.scala-sbt.org/1.x/docs/sbt-by-example.html
+
+Problemas resueltos con Scala
+	http://aperiodic.net/phil/scala/s-99/
+
