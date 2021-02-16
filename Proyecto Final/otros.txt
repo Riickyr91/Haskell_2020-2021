@@ -1,0 +1,3 @@
+https://discourse.haskell.org/t/how-to-install-modules/1363/2
+
+https://superuser.com/questions/116478/keyboard-combination-to-signal-end-of-standard-in-to-windows-console
