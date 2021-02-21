@@ -47,10 +47,10 @@ Explicación :
 
     unlines -> crea una cadena a partir de una matriz de cadenas.
     Prelude> unlines ["aa", "bb", "cc", "dd", "ee"]
-    "aa \ nbb \ ncc \ ndd \ nee \ n"
+    "aa\nbb\ncc\ndd\nee\n"
 
     lines -> crea una matriz de cadenas a partir de una cadena.
-    Prelude> lines "aa \ nbb \ nbb"
+    Prelude> lines "aa\nbb\nbb"
     ["aa", "bb", "bb"]
     
     fromMaybe -> utilizado para los valores Maybe, devuelve el valor del Just, sino devuelve None ( en el caso del Nothing).
