@@ -157,7 +157,7 @@ Dado dos puntos, descritos como pareja de enteros, devuelve el punto promedio de
 ```
 
 ### noBlocked
-Dado un laberinto, una posición posible (a partir de la actual) y la posición intermedia , devuelve **true** si la posicion intermedia está bloqueada por un muro y **false** en el caso contrario.
+Dado un laberinto, una posición posible (a partir de la actual) y la posición intermedia, devuelve **true** si la posicion intermedia está bloqueada por un muro y **false** en el caso contrario.
 ```Haskell
     notBlocked :: [String] -> ((Int, Int), (Int, Int)) -> Bool
     notBlocked maze (_, (x, y)) = ' ' == (maze !! y) !! x
@@ -244,7 +244,7 @@ Aplica `interact` ( explicado previamente) a `main_`, utilizando la funcion `lin
 
 Después de estudiar el código anterior, nos propusimos la tarea de implementar nuestro propio método para resolver este tipo de problemas usando algunas de las herramientas y funciones que nos ha aportado el código anterior (es el caso de las funciones `average`, `notBlocked`, `substitute` y `draw`).
 
-La idea que hemos seguido para plantear este algoritmo de resolución de laberintos, es muy sencilla. Esta consiste en avazanzar siempre pegado a la pared de la derecha (en nuestro caso). De esta forma se puede resolver cualquier laberinto. En el peor caso se recorrerá el laberinto al completo pero siempre hallará una solución si esta existe.
+La idea que hemos seguido para plantear este algoritmo de resolución de laberintos, es muy sencilla. Esta consiste en avanzar siempre pegado a la pared de la derecha (en nuestro caso). De esta forma se puede resolver cualquier laberinto. En el peor caso se recorrerá el laberinto al completo pero siempre hallará una solución si esta existe.
 
 Para ello tenemos que tener en cuenta la orientación y la posición actual en cada momento, ya que la pared que estamos siguiendo estará arriba, abajo, a la izquierda o a la derecha de la posición actual en función de la orientación. Indicaremos la orientación con los números 0 (a la derecha), 1 (hacia arriba), 2 (a la izquierda) y 3 (hacia abajo). 
 
@@ -295,7 +295,7 @@ Llama a `posPosibles` recibiendo de ellas los posibles movientos y calcula la po
 
 ### check
 Se encarga de controlar y llamar a `check_`. 
-Recibe como entrada desde el main, el laberinto en forma de string.
+Recibe como entrada desde el main el laberinto en forma de string.
 Su salida será el laberinto resuelto en forma de `[String]`.
 Además calcula la posición inicial del laberinto tomando sus bordes como referencia.
 ```Haskell
@@ -323,8 +323,8 @@ Obtiene la entrada por consola usando `interact` y muestra el laberinto correcta
 > En la imagen podemos observar el funcionamiento del algoritmo original ( a la izquierda) y el nuestro ( a la derecha).
  
  ## Instrucciones de ejecución
- Ejecutar el código desde el intérprete o `WinHugs` da problemas con la entrada de texto. Lo mejor es ejecutar el programa directamente con la herramienta `runHaskell`, la cual forma parte del paquete `Haskell-Platform` el cual puede ser instalado fácilmente en sistemas Linux directamente desde los repositorios o en Windows siguiendo los siguientes pasos.
- 1. Partimos de la base que vamos a ejecutarlo en Visual Studio Code, por lo que debemos tenerlo instalado.
+ Ejecutar el código desde el intérprete o `WinHugs` da problemas con la entrada de texto. Lo mejor es ejecutar el programa directamente con la herramienta `runHaskell`, la cual forma parte del paquete `Haskell-Platform` que puede ser instalado fácilmente en sistemas Linux directamente desde los repositorios o en Windows siguiendo los siguientes pasos.
+ 1. Partimos de la base que vamos a instalar el paquete con la ayuda de Visual Studio Code, por lo que debemos tenerlo instalado.
  2. Accedemos a los paquetes instalados y buscamos el paquete Haskell:
 
     Name: Haskell 
@@ -339,14 +339,14 @@ Obtiene la entrada por consola usando `interact` y muestra el laberinto correcta
     
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=haskell.haskell
  
- 3. Una vez instalado Haskell en nuestro sistema, abrimos una terminal en la carpeta donde se encuentra los archivos *.hs*.
- 4. Cargamos nuestro fichero *maze_Solver.hs* o *maze_Solver_Alternative.hs*. Usando `runhaskell`
+ 3. Una vez instalado Haskell en nuestro sistema, abrimos una terminal en la carpeta donde se encuentran los archivos *.hs*.
+ 4. Cargamos nuestro fichero *maze_Solver.hs* o *maze_Solver_Alternative.hs*. Usando `runhaskell`.
 ```Haskell
     runHaskel maze_Solver.hs
 ```
 5. El programa esperará que introduzcamos el laberinto. Copiamos cualquiera de los que se incluyen en el archivo *maze_templates.txt* y lo pegamos en la terminal. 
 Ahora tendremos que indicar el final de entrada: 
--  En GNU/Linux usando `cntrl+D` 
+-  En GNU/Linux usando `ctrl+D`.
 -  En Windows debemos pulsar `ctrl+Z` seguido de `Enter`, y de nuevo `ctrl+Z` seguido de `Enter`.
 
 6. Finalmente el programa mostrará el laberinto resuelto.
