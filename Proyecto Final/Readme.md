@@ -340,9 +340,9 @@ Obtiene la entrada por consola usando `interact` y muestra el laberinto correcta
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=haskell.haskell
  
  3. Una vez instalado Haskell en nuestro sistema, abrimos una terminal en la carpeta donde se encuentran los archivos *.hs*.
- 4. Cargamos nuestro fichero *maze_Solver.hs* o *maze_Solver_Alternative.hs*. Usando `runhaskell`.
+ 4. Ejecutamos nuestro fichero *maze_Solver.hs* o *maze_Solver_Alternative.hs*. Usando `runhaskell`. Esto básicamente lo que hace es ejecutar la función main del proyecto.
 ```Haskell
-    runHaskel maze_Solver.hs
+    runhaskell maze_Solver.hs
 ```
 5. El programa esperará que introduzcamos el laberinto. Copiamos cualquiera de los que se incluyen en el archivo *maze_templates.txt* y lo pegamos en la terminal. 
 Ahora tendremos que indicar el final de entrada: 
